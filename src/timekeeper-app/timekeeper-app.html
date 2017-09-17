@@ -1,4 +1,7 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
 
 <dom-module id="timekeeper-app">
   <template>
@@ -6,8 +9,20 @@
       :host {
         display: block;
       }
+      .green-button {
+        background: var(--paper-green-400);
+        color: white;
+      }
+      .red-button {
+        background: var(--paper-red-400);
+        color: white;
+      }
     </style>
     <h2>Hello [[prop1]]!</h2>
+    <paper-input label="Redmine">Redmine</paper-input>
+    <paper-input label="Description">Description</paper-input>
+    <paper-button raised class="green-button" on-click="handleStartClick">Start</paper-button>
+    <paper-button raised class="red-button" on-click="handleStopClick">Stop</paper-button>
   </template>
 
   <script>
@@ -24,6 +39,15 @@
             value: 'timekeeper-app'
           }
         };
+      }
+
+      handleStartClick () {
+        alert("Start clicked!");
+        console.log("Start clicked!");
+      }
+
+      handleStopClick () {
+        alert("Stop clicked");
       }
     }
 

@@ -3,7 +3,10 @@
   "description": "Makes tracking time at work easy",
   "main": "index.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "paper-input": "^2.0.2",
+    "paper-icon-button": "^2.0.1",
+    "paper-button": "^2.0.0"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",
