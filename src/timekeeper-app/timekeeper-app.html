@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="timekeeper-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class TimekeeperApp extends Polymer.Element {
+      static get is() { return 'timekeeper-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'timekeeper-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(TimekeeperApp.is, TimekeeperApp);
+  </script>
+</dom-module>

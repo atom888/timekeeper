@@ -1,0 +1,7 @@
+{
+  "name": "timekeeper",
+  "short_name": "timekeeper",
+  "description": "Makes tracking time at work easy",
+  "start_url": "/",
+  "display": "standalone"
+}
